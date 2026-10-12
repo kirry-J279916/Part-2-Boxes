@@ -25,44 +25,58 @@ function resetBoxes() {
 
 function greenAroundBlueAndRedBoxes() {
 
+    console.log("greenAroundBlueAndRedBoxes ran");
 }
 
 
 function blueInsideRedBoxRelocated() {
 
+    console.log("blueInsideRedBoxRelocated ran");
 }
 
 
 function redRightOfBlueBox() {
 
+    console.log("redRightOfBlueBox ran");
 }
 
 
 function blueRightOfRedBox() {
 
+    console.log("blueRightOfRedBox ran");
 }
 
 
 function blueUnderRedBox() {
 
+    console.log("blueUnderRedBox ran");
 }
 
 
 function blueInsideRedBox() {
-    blueBoxIn.style.top;
+    // blueBoxIn.style.top;
+
+    console.log("blueInsideRedBox ran");
 }
 
 
 function init(){
     // 'use strict';
 
-    let BlueInRedButton = document.getElementById('btn1');
-    BlueInRedButton.addEventListener("submit", blueInsideRedBox);
+    let blueInRedButton = document.getElementById('btn1');
+    let blueUnderRedButton = document.getElementById('btn2');
+    let blueRightOfRedButton = document.getElementById('btn3');
+    let redRightOfBlueButton = document.getElementById('btn4');
+    let blueInsideRedBoxMovedButton = document.getElementById('btn5');
+    let greenAroundBlueRedButton = document.getElementById('btn6');
 
-
-// All event listeners here
-
-
+    // All event listeners here
+    blueInRedButton.addEventListener("click", blueInsideRedBox);
+    blueUnderRedButton.addEventListener("click", blueUnderRedBox);
+    blueRightOfRedButton.addEventListener("click", blueRightOfRedBox);
+    redRightOfBlueButton.addEventListener("click", redRightOfBlueBox);
+    blueInsideRedBoxMovedButton.addEventListener("click", blueInsideRedBoxRelocated);
+    greenAroundBlueRedButton.addEventListener("click", greenAroundBlueAndRedBoxes);
 }
 
 
