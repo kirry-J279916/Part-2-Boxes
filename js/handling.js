@@ -10,6 +10,10 @@ function resetBoxes() {
     let blueBoxBottom = document.getElementById("blueBottom");
 
 
+    blueBoxBottom.style.display = "none";
+    blueBoxIn.style.background = "none";
+
+
     greenBox.style.left = "0px";
     greenBox.style.top = "0px";
     redBox.style.left = "0px";
@@ -42,19 +46,32 @@ function redRightOfBlueBox() {
 
 
 function blueRightOfRedBox() {
+    resetBoxes();
+
+    let blueBoxRight = document.getElementById("blueBottom");
+    blueBoxRight.style.display = "block"
+    blueBoxRight.style.left = "620px";  //margins = 20px
 
     console.log("blueRightOfRedBox ran");
 }
 
 
 function blueUnderRedBox() {
+    resetBoxes();
+
+    let blueBoxBottom = document.getElementById("blueBottom");
+    blueBoxBottom.style.display = "block"
+    blueBoxBottom.style.top = "620px";  //margins = 20px
 
     console.log("blueUnderRedBox ran");
 }
 
 
 function blueInsideRedBox() {
-    // blueBoxIn.style.top;
+    resetBoxes();
+
+    let blueBoxIn = document.getElementById("blueIn");
+    blueBoxIn.style.display = "block"
 
     console.log("blueInsideRedBox ran");
 }
