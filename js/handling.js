@@ -4,6 +4,8 @@
 
 
 function resetBoxes() {
+    'use strict';
+
     let greenBox = document.getElementById("green");
     let redBox = document.getElementById("red");
     let blueBoxIn = document.getElementById("blueIn");
@@ -25,6 +27,8 @@ function resetBoxes() {
 
 
 function greenAroundBlueAndRedBoxes() {
+    'use strict';
+
     resetBoxes();
     let greenBox = document.getElementById("green");
     let blueBoxIn = document.getElementById("blueIn");
@@ -41,10 +45,12 @@ function greenAroundBlueAndRedBoxes() {
 
 
 function blueInsideRedBoxRelocated() {
+    'use strict';
+
     resetBoxes();
 
     let blueBoxRelocated = document.getElementById("blueIn");
-    blueBoxRelocated.style.display = "block"
+    blueBoxRelocated.style.display = "block";
     blueBoxRelocated.style.left = "";  //clear left reset px
     blueBoxRelocated.style.top = "20px";
     blueBoxRelocated.style.right = "45px";
@@ -54,12 +60,14 @@ function blueInsideRedBoxRelocated() {
 
 
 function redRightOfBlueBox() {
+    'use strict';
+
     resetBoxes();
     let blueBox = document.getElementById("blueBottom");
-    blueBox.style.display = "block"
+    blueBox.style.display = "block";
 
     let redBoxRight = document.getElementById("red");
-    redBoxRight.style.display = "block"
+    redBoxRight.style.display = "block";
     redBoxRight.style.left = "320px";  //margins = 20px
 
     console.log("redRightOfBlueBox ran");
@@ -67,10 +75,12 @@ function redRightOfBlueBox() {
 
 
 function blueRightOfRedBox() {
+    'use strict';
+
     resetBoxes();
 
     let blueBoxRight = document.getElementById("blueBottom");
-    blueBoxRight.style.display = "block"
+    blueBoxRight.style.display = "block";
     blueBoxRight.style.left = "620px";  //margins = 20px
 
     console.log("blueRightOfRedBox ran");
@@ -78,10 +88,12 @@ function blueRightOfRedBox() {
 
 
 function blueUnderRedBox() {
+    'use strict';
+
     resetBoxes();
 
     let blueBoxBottom = document.getElementById("blueBottom");
-    blueBoxBottom.style.display = "block"
+    blueBoxBottom.style.display = "block";
     blueBoxBottom.style.top = "620px";  //margins = 20px
 
     console.log("blueUnderRedBox ran");
@@ -89,10 +101,12 @@ function blueUnderRedBox() {
 
 
 function blueInsideRedBox() {
+    'use strict';
+
     resetBoxes();
 
     let blueBoxIn = document.getElementById("blueIn");
-    blueBoxIn.style.display = "block"
+    blueBoxIn.style.display = "block";
     blueBoxIn.style.top = "10px";
     blueBoxIn.style.left = "10px";
 
@@ -101,7 +115,7 @@ function blueInsideRedBox() {
 
 
 function init(){
-    // 'use strict';
+    'use strict';
 
     let blueInRedButton = document.getElementById('btn1');
     let blueUnderRedButton = document.getElementById('btn2');
