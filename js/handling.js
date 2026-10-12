@@ -9,10 +9,9 @@ function resetBoxes() {
     let blueBoxIn = document.getElementById("blueIn");
     let blueBoxBottom = document.getElementById("blueBottom");
 
-
+    greenBox.style.background = "transparent";
     blueBoxBottom.style.display = "none";
-    blueBoxIn.style.background = "none";
-
+    blueBoxIn.style.display = "none";
 
     greenBox.style.left = "0px";
     greenBox.style.top = "0px";
@@ -22,24 +21,46 @@ function resetBoxes() {
     blueBoxIn.style.top = "0px";
     blueBoxBottom.style.left = "0px";
     blueBoxBottom.style.top = "0px";
-
-
 }
 
 
 function greenAroundBlueAndRedBoxes() {
+    resetBoxes();
+    let greenBox = document.getElementById("green");
+    let blueBoxIn = document.getElementById("blueIn");
+
+    greenBox.style.width = "100%";
+    greenBox.style.height = "620px";  //margins = 20px
+    greenBox.style.background = "green";
+    blueBoxIn.style.display = "block";
+    blueBoxIn.style.top = "10px";
+    blueBoxIn.style.left = "10px";
 
     console.log("greenAroundBlueAndRedBoxes ran");
 }
 
 
 function blueInsideRedBoxRelocated() {
+    resetBoxes();
+
+    let blueBoxRelocated = document.getElementById("blueIn");
+    blueBoxRelocated.style.display = "block"
+    blueBoxRelocated.style.left = "";  //clear left reset px
+    blueBoxRelocated.style.top = "20px";
+    blueBoxRelocated.style.right = "45px";
 
     console.log("blueInsideRedBoxRelocated ran");
 }
 
 
 function redRightOfBlueBox() {
+    resetBoxes();
+    let blueBox = document.getElementById("blueBottom");
+    blueBox.style.display = "block"
+
+    let redBoxRight = document.getElementById("red");
+    redBoxRight.style.display = "block"
+    redBoxRight.style.left = "320px";  //margins = 20px
 
     console.log("redRightOfBlueBox ran");
 }
@@ -72,6 +93,8 @@ function blueInsideRedBox() {
 
     let blueBoxIn = document.getElementById("blueIn");
     blueBoxIn.style.display = "block"
+    blueBoxIn.style.top = "10px";
+    blueBoxIn.style.left = "10px";
 
     console.log("blueInsideRedBox ran");
 }
